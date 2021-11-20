@@ -18,6 +18,7 @@ function Admin() {
     batsman2_score: "",
     bowler_wickets: "",
     bowler_runs: "",
+    commentary: ""
   });
 
   useEffect(() => {
@@ -217,6 +218,20 @@ function Admin() {
           onChange={(e) => {
             setScore((prev) => {
               return { ...prev, bowler_runs: e.target.value };
+            });
+          }}
+          placeholder="bowler runs"
+        />
+          <TextField
+          sx={({ ml: 4 }, { p: 2 })}
+          size="medium"
+          label="commentary"
+          variant="standard"
+          type="number"
+          value={score.commentary}
+          onChange={(e) => {
+            setScore((prev) => {
+              return { ...prev, commentary: e.target.value };
             });
           }}
           placeholder="bowler runs"

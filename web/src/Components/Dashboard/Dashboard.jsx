@@ -73,7 +73,10 @@ function Dashboard() {
             <Typography sx={{ mb: 1.5, fontsize:35 }} >
               over: {score.over}
             </Typography>
-            
+            <Typography variant="body2"  sx={{ fontSize: 25 }}>
+              comentry:
+              <b> {score.comentry}</b>
+            </Typography>
             </div>
     </div>
   );

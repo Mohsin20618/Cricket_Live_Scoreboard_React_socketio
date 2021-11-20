@@ -27,7 +27,8 @@ const Score = mongoose.model("Score", {
     batsman1_score:String,
     batsman2_score:String,
     bowler_wickets:String,
-    bowler_runs:String
+    bowler_runs:String,
+    commentary:String
 })
 app.use(express.json())
 
@@ -55,6 +56,7 @@ app.post("/api/v1/score", (req, res) => {
         batsman2_score:req.body.batsman2_score,
         bowler_wickets:req.body.bowler_wickets,
         bowler_runs:req.body.bowler_runs,
+        commentary:req.body.commentary,
     });
     newScore.save().then(() => {
         console.log("Score created");
@@ -73,6 +75,7 @@ app.post("/api/v1/score", (req, res) => {
             batsman2_score:req.body.batsman2_score,
             bowler_wickets:req.body.bowler_wickets,
             bowler_runs:req.body.bowler_runs,
+            commentary:req.body.commentary,
         });
 
         res.send("Score created");
