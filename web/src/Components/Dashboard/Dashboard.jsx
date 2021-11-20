@@ -51,11 +51,6 @@ function Dashboard() {
             </Typography>
             <Typography
               sx={{ fontSize: 35 }}
-            >
-              Batsamans 
-            </Typography>
-            <Typography
-              sx={{ fontSize: 35 }}
             
               gutterBottom
             >
@@ -67,11 +62,6 @@ function Dashboard() {
               gutterBottom
             >
               {score.batsman2} : {score.batsman2_score} 
-            </Typography>
-            <Typography
-              sx={{ fontSize: 35 }}
-            >
-              Bowler
             </Typography>
             <Typography
               sx={{ fontSize: 35 }}
