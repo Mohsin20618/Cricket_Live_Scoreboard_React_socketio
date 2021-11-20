@@ -234,7 +234,7 @@ function Admin() {
               return { ...prev, commentary: e.target.value };
             });
           }}
-          placeholder="bowler runs"
+          placeholder="Commentary"
         />
         <br />
         <Button variant="contained" sx={{ mt: 2 }} onClick={submit}>
