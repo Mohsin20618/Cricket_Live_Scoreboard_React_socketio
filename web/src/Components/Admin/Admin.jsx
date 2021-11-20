@@ -227,7 +227,6 @@ function Admin() {
           size="medium"
           label="commentary"
           variant="standard"
-          type="number"
           value={score.commentary}
           onChange={(e) => {
             setScore((prev) => {
